@@ -5,12 +5,12 @@ from flask_cors import CORS
 import mysql.connector as MYSQL
 #from flask_ngrok import run_with_ngrok
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 CORS(app)
 #run_with_ngrok(app)
 
 # connecion_string = {'host':"147.232.40.14", 'user':"tv635vg", 'passwd':"Airi8Eiw", 'database':"tv635vg"}
-connecion_string = {'host':"147.232.40.14", 'user':"sg624ew", 'passwd':"moor8eiW", 'database':"sg624ew"}
+# connecion_string = {'host':"147.232.40.14", 'user':"sg624ew", 'passwd':"moor8eiW", 'database':"sg624ew"}
 
 @app.route('/GetOrders', methods=['GET'])
 def GetOrders():
