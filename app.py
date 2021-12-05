@@ -37,13 +37,14 @@ def GetIdOrder(id):
   myDb.close()
   return jsonify(result),200
 
-@app.route('/GetProducts', methods=['GET'])
-def GetProducts():
+@app.route('/GetProducts/<cat_id>', methods=['GET'])
+def GetProducts(cat_id):
   with open ('content/ProductGetTable.ddl') as ddl_file:
     sql = ddl_file.read()
+    sql = sql + "'{}'"
   myDb = MYSQL.connect(**connection_string)
   cursor = myDb.cursor()
-  cursor.execute(sql)
+  cursor.execute(sql.format(cat_id))
   result = cursor.fetchall()
   cursor.close()
   myDb.close()
