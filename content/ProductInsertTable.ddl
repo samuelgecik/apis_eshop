@@ -1,0 +1,1 @@
+INSERT INTO products(product_ID, product_name, product_price, product_pieces_WH) values()
