@@ -9,6 +9,9 @@ app = Flask(__name__)
 CORS(app)
 #run_with_ngrok(app)
 
+# connecion_string = {'host':"147.232.40.14", 'user':"tv635vg", 'passwd':"Airi8Eiw", 'database':"tv635vg"}
+connecion_string = {'host':"147.232.40.14", 'user':"sg624ew", 'passwd':"moor8eiW", 'database':"sg624ew"}
+
 @app.route('/GetOrders', methods=['GET'])
 def GetOrders():
   with open ('content/OrderGetTable.ddl') as ddl_file:
