@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import request, redirect, url_for
+from flask import request, redirect, url_for, render_template
 from flask import jsonify
 from flask_cors import CORS
 import mysql.connector as MYSQL
@@ -48,10 +48,6 @@ def GetProducts():
   cursor.close()
   myDb.close()
   return jsonify(result),200
-
-@app.route('/imgs/<filename>', methods=['GET'])
-def display_image(filename):
-	return redirect(url_for('static', filename='imgs/' + filename), code=301)
 
 @app.route('/GetCustomers', methods=['GET'])
 def GetCustomers():
