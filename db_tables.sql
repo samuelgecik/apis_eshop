@@ -12,8 +12,8 @@ CREATE TABLE products (
     product_pieces_WH INT NOT NULL,
     card_description VARCHAR(200) NOT NULL,
     short_description VARCHAR(300) NOT NULL,
-    long_description VARCHAR(2000) NOT NULL,
-    img_url VARCHAR(50),
+    long_description VARCHAR(20000) NOT NULL,
+    img_url VARCHAR(200),
     CONSTRAINT PK_product PRIMARY KEY (product_ID),
     CONSTRAINT FK_category_ID_products FOREIGN KEY (category_ID)
         REFERENCES categories (category_ID)
