@@ -60,14 +60,14 @@ VALUES (7,4,'LiPo Akku 7,4 V / 6500 mAh - 45C Pro Racing',53,14,
 'Pohonný LiPo Akku pre autá v hardcase 7,4 V / 6500 mAh - 45C Pro Racing',
 '<div><div>JEDNA Z NAJSILNEJŠÍCH AKU TRHU OD NEMECKÉ SPOLOČNOSTI DF-MODELS = BRUTÁLNY VÝKON A DLHÁ DOBA JAZDY!</div><div><br /></div><div>NOVINKA v našom sortimente akumulátorov. Okrem zvýšenia výkonu, majú naše nové Pro-Racing Packs aj dlhšiu životnosť a väčšiu kapacitu. Aku je určená pre pohon áut z veľkosti 1:10. Odolný celoplastový obal ochráni akumulátor pri mechanickom poškodením!</div></div><div><br /></div><div><br /></div><div>Technické parametre:&nbsp;</div><div><br /></div><div><ul><li>Napätie: 7,4 voltov<br /></li><li>Kapacita: 6500 mAh</li><li>Vybíjanie max: 45C</li><li>Typ: Li-Pol</li><li>Rozmery: 138 x 46 x 31 mm</li><li>Hmotnosť: 240 g (vrátane kábla a T-dean konektoru)</li></ul></div>
 ',
-'https://apisrceshop.herokuapp.com/static/imgs/rc-auto-lancia-037-rally-1983-1-10-15.jpeg');
+'https://apisrceshop.herokuapp.com/static/imgs/lipo-akku-7-4-v-6500-mah-45c-pro-racing.png');
 INSERT INTO products
 VALUES (8,4,'Pištolový vysielač PRO III',55,1,
 ' ',
 'Inovatívny dvojkanálový pištolový ovládač PRO III.',
 '<p>Pištoľový vysielač Pre III je inovatívny dvojkanálový systém RC od spoločnosti Carson-Model Sport. Uhol riadenia a posuv servopohonu na škrtiacej klapke sú nastaviteľné (dvojitá rýchlosť). To umožňuje, aby bol každý model veľmi citlivo riadený povrchu vozovky. Okrem toho môže byť plyn pre začiatočníkov a deti obmedzený. Chrómový volant s penovou gumovou uchopovacou plochou umožňuje presné ovládanie dopredu a dozadu. Integrovaná funkcia automatického zastavenia (podpäťová ochrana) v prijímači je záchranný systém pre váš model. Tento systém diaľkového ovládania je ideálny pre všetky oblasti RC-Car Sport.</p>
 ',
-'https://apisrceshop.herokuapp.com/static/imgs/rc-auto-lancia-037-rally-1983-1-10-15.jpeg');
+'https://apisrceshop.herokuapp.com/static/imgs/pistolovy-vysilac-pro-iii.png');
 
 INSERT INTO customers
 VALUES (1,'John','Monday','0911654899','johnMonday@gmail.com','Hlavná5','Kosice','Slovakia');
