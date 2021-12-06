@@ -39,7 +39,7 @@ def GetIdOrder(id):
   myDb.close()
   return jsonify(result),200
 
-@app.route('/GetProducts/<cat_id>', methods=['GET'])
+@app.route('/products/<cat_id>', methods=['GET'])
 def GetProducts(cat_id):
   with open ('content/ProductGetTable.ddl') as ddl_file:
     sql = ddl_file.read()
