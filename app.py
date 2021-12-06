@@ -3,12 +3,14 @@ from flask import request, redirect, url_for, render_template
 from flask import jsonify
 from flask_cors import CORS
 import mysql.connector as MYSQL
+from serializer import serializer
 #from flask_ngrok import run_with_ngrok
 
 app = Flask(__name__, static_url_path='/static')
 CORS(app)
 #run_with_ngrok(app)
 
+app.config['JSON_AS_ASCII'] = False
 # connection_string = {'host':"147.232.40.14", 'user':"tv635vg", 'passwd':"Airi8Eiw", 'database':"tv635vg"}
 connection_string = {'host':"147.232.40.14", 'user':"sg624ew", 'passwd':"moor8eiW", 'database':"sg624ew"}
 
@@ -46,9 +48,12 @@ def GetProducts(cat_id):
   cursor = myDb.cursor()
   cursor.execute(sql.format(cat_id))
   result = cursor.fetchall()
+  fields_list = cursor.description
   cursor.close()
   myDb.close()
-  return jsonify(result),200
+  series = serializer(fields_list, result)
+  return jsonify({'products': series}),200
+  # return jsonify(result),200
 
 @app.route('/GetCustomers', methods=['GET'])
 def GetCustomers():

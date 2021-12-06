@@ -1,1 +1,1 @@
-SELECT * from products WHERE product_ID=
+SELECT * from products WHERE category_ID=
